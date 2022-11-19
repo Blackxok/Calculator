@@ -1,0 +1,116 @@
+@charset "UTF-8";
+:root {
+  --shadow1: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fffb;
+  --shadow2: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px #fffb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+  background: #edf1f4;
+}
+
+.container {
+  width: 280px;
+  border: 2px solid #edf1f4;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow1);
+  padding: 25px 30px;
+}
+.container .buttons {
+  position: relative;
+  display: grid;
+}
+.container .buttons .item1 {
+  overflow: none;
+  font-size: 2em;
+  text-align: end;
+  font-weight: 500;
+  line-height: 40px;
+  position: relative;
+  grid-column: span 4;
+  border-radius: 10px;
+  color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  box-shadow: var(--shadow2);
+  height: 50px;
+}
+.container .buttons span {
+  padding: 7px;
+  text-align: center;
+  margin: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  box-shadow: var(--shadow1);
+  margin: 7px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #666;
+  border: 2px solid #edf1f4;
+  border-radius: 10px;
+}
+.container .buttons span .in {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  text-align: end;
+  font-size: 20px;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.container .buttons span .in:focus {
+  outline: none;
+}
+.container .buttons span:active {
+  box-shadow: var(--shadow2);
+}
+.container .buttons .clear {
+  grid-column: span 2;
+}
+☺ .container .buttons .clear:active {
+  color: red;
+}
+.container .buttons .teng:active {
+  color: #2146c7;
+}
+.container .buttons .nol {
+  grid-column: span 2;
+}
+.container .buttons .cliked {
+  box-shadow: var(--shadow2);
+}
+
+.back i {
+  font-size: 10px;
+}/*# sourceMappingURL=style.css.map */
