@@ -4,11 +4,6 @@ const val = document.getElementById("inp");
 
 for (let i = 0; i < btn.length; i++) {
 	btn[i].addEventListener("click", function () {
-		//
-		if (this.innerHTML == "") {
-			console.log(val.innerHTML.split(","));
-		}
-		//
 		if (this.innerHTML == "=") {
 			if (val.innerHTML.length < 2) {
 				val.innerHTML = "";
@@ -21,6 +16,17 @@ for (let i = 0; i < btn.length; i++) {
 			} else {
 				val.innerHTML += this.innerHTML;
 			}
+			//
+			//
 		}
 	});
 }
+
+// function del() {
+// 	if (val.innerHTML > 0) {
+// 		let A = val.innerHTML;
+// 		A.split(",");
+// 		console.log(val.innerHTML);
+// 		console.log(A);
+// 	}
+// }
