@@ -74,9 +74,7 @@ body {
 }
 .container .buttons span .in {
   width: 100%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: 40px;
   text-align: end;
   font-size: 20px;
   border: none;

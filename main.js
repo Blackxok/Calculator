@@ -16,17 +16,12 @@ for (let i = 0; i < btn.length; i++) {
 			} else {
 				val.innerHTML += this.innerHTML;
 			}
-			//
-			//
+		}
+		if (this.innerHTML == "del" && val.innerHTML.length == 3) {
+			val.innerHTML = "";
+		} else if (this.innerHTML == "del") {
+			let A = val.innerText.toString();
+			val.innerHTML = A.slice(-4);
 		}
 	});
 }
-
-// function del() {
-// 	if (val.innerHTML > 0) {
-// 		let A = val.innerHTML;
-// 		A.split(",");
-// 		console.log(val.innerHTML);
-// 		console.log(A);
-// 	}
-// }
