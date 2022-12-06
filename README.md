@@ -1,2 +1,2 @@
-# Calculator-cha practic____
+# Calculator-cha practic___
 https://calculate-cha.netlify.app/
